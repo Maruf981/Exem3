@@ -912,10 +912,6 @@ video {
     margin: auto;
   }
 
-  .sm\:mb-5 {
-    margin-bottom: 1.25rem;
-  }
-
   .sm\:hidden {
     display: none;
   }
@@ -1002,10 +998,6 @@ video {
 
   .sm\:pt-5 {
     padding-top: 1.25rem;
-  }
-
-  .sm\:pb-5 {
-    padding-bottom: 1.25rem;
   }
 }
 
