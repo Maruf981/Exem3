@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <title>Document</title>
 </head>
+
 <body>
     <navbar class="flex justify-center gap-28 items-center h-20 text-[14px] bg-[#e3b9b6] sm:gap-2">
         <div class="flex gap-10 sm;gap-2 md:gap-2">
-            <img src="./images/logo.png" alt="">
+            <img src="./img/logo.png" alt="">
             <select name="" id="pageSelector" class="bg-[#e3b9b6]" onchange="navigateToPage()">
                 <option value="" disabled selected>Choose a page</option>
                 <option value="index1.html">Page 1</option>
@@ -29,7 +31,7 @@
                     const selector = document.getElementById('pageSelector');
                     const selectedPage = selector.value;
                     if (selectedPage) {
-                        window.location.href = selectedPage; 
+                        window.location.href = selectedPage;
                     }
                 }
             </script>
@@ -44,5 +46,42 @@
             <img src="./img/account.png" alt="">
         </div>
     </navbar>
+    <header>
+        <div>
+            <div class="flex flex-col items-center pt-10">
+                <p style="font-weight: 500; font-size: 20px;">Enjoy your studying!</p>
+                <p style="font-size: 35px; font-weight: 600"> Our online courses</p>
+            </div>
+            <div class="flex justify-center items-center gap-24 pt-8 sm:flex-col sm:gap-2 md:flex-col md:gap-2">
+                <div class="flex items-center sm:flex-col">
+                    <img src="./img/number.png" alt="">
+                    <img src="./img/number1.png" alt="">
+                    <img src="./img/number2.png" alt="">
+                    <img src="./img/number3.png" alt="">
+                    <img src="./img/number4.png" alt="">
+                    <img src="./img/number5.png" alt="">
+                </div>
+                <div class="flex items-center gap-5 border border-[gray] rounded w-[200px]">
+                    <input type="text" placeholder="Your working email" class="w-36 h-10 rounded">
+                    <img src="./img/search.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class=" bg-[#FFFFFF] w-auto rounded-lg shadow-md  sm:w-[93%] sm:m-auto md:w-[93%] md:m-auto">
+                    <div>
+                        <img src="./img/imagei1.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-8 pt-10">
+                        <p class=" bg-[#5A87FC] rounded-md text-[white] w-[110px] flex justify-center">Management</p>
+                        <p style="font-weight: bold;">Business Development <br> Management</p>
+                        <div class="flex items-center gap-2">
+                            <p style="color: red;">$400</p>
+                            <img src="./img/divider.png" alt="">
+                            <p style="color: gray;">by Dianne Russell</p>
+                        </div>
+                    </div>
+                </div>
+    </header>
 </body>
+
 </html>
