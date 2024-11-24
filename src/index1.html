@@ -1,12 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <navbar class="flex justify-center gap-28 items-center h-20 text-[14px] bg-[#e3b9b6] sm:gap-2">
+        <div class="flex gap-10 sm;gap-2 md:gap-2">
+            <img src="./img/logo.png" alt="">
+            <select name="" id="pageSelector" class="bg-[#e3b9b6]" onchange="navigateToPage()">
+                <option value="" disabled selected>Choose a page</option>
+                <option value="index1.html">Page 1</option>
+                <option value="index2.html">Page 2</option>
+                <option value="page3.html">Page 3</option>
+                <option value="page4.html">Page 4</option>
+                <option value="page5.html">Page 5</option>
+                <option value="page6.html">Page 6</option>
+                <option value="page7.html">Page 7</option>
+                <option value="page8.html">Page 8</option>
+                <option value="page9.html">Page 9</option>
+                <option value="page10.html">Page 10</option>
+            </select>
+
+            <script>
+                function navigateToPage() {
+                    const selector = document.getElementById('pageSelector');
+                    const selectedPage = selector.value;
+                    if (selectedPage) {
+                        window.location.href = selectedPage;
+                    }
+                }
+            </script>
+
+            <p class="sm:hidden md:hidden">Courses</p>
+            <p class="sm:hidden md:hidden">Events</p>
+            <p class="sm:hidden md:hidden">Blog</p>
+            <p class="sm:hidden md:hidden">Contacts</p>
+        </div>
+        <div class="flex gap-10">
+            <p class="bg-[#FF3F3A] text-[white] w-40 text-center sm:hidden md:hidden">Get consultation</p>
+            <img src="./img/account.png" alt="">
+        </div>
+    </navbar>
+    <header class="pt-10 bg-[#e3b9b6] ">
+        <div
+            class="flex justify-center items-center gap-32 sm:flex-col sm:justify-center sm:m-auto md:flex-col md:justify-center md:m-auto">
+            <div>
+                <div class="flex gap-5 items-center pb-5">
+                    <img src="./img/hover.png" alt="">
+                    <p>Play showreel</p>
+                </div>
+                <p style="font-size: 40px; padding-bottom: 40px; ">Enjoy studying <br> with Createx <br> Online Courses
+                </p>
+                <div class="flex gap-16 items-center sm:gap-10 md:gap-10">
+                    <p class="border border-[#FF3F3A] w-28 h-8 flex items-center justify-center text-[#FF3F3A]">About us
+                    </p>
+                    <p class="bg-[#FF3F3A] text-[white] w-36 text-center h-8 flex justify-center items-center">Explore
+                        courses</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/illustration (1).png" alt="">
+            </div>
+        </div>
+        <div
+            class="flex justify-center items-center gap-14 mt-10 sm:flex-col sm:gap-3 sm:items-start sm:pl-10 md:flex-col md:gap-3 md:items-start md:pl-10 pb-16">
+            <div class="flex items-center gap-9">
+                <p style="font-size: 40px;">1200</p>
+                <p style="font-size: 13px;">Students graduated</p>
+            </div>
+            <div class="flex items-center gap-9">
+                <img src="./img/ellipse.png" alt="">
+                <p style="font-size: 40px;">84</p>
+                <p style="font-size: 13px;">Completed courses</p>
+            </div>
+            <div class="flex items-center gap-9">
+                <img src="./img/ellipse.png" alt="">
+                <p style="font-size: 40px;">16</p>
+                <p style="font-size: 13px;">Qualified tutors</p>
+            </div>
+            <div class="flex items-center gap-9">
+                <img src="./img/ellipse.png" alt="">
+                <p style="font-size: 40px;">5</p>
+                <p style="font-size: 13px;">Years of experience</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="flex justify-center gap-24 pt-14 sm:flex-col sm:m-auto md:flex-col md:m-auto">
+            <div>
+                <img src="./img/image (29).png" alt="" style="width: 600px; ">
+            </div>
+            <div class="flex flex-col gap-5 sm:w-[90%] sm:m-auto md:w-[90%] md:m-auto">
+                <p>WHO WE ARE</p>
+                <p style="font-size: 35px;">Why Createx?</p>
+                <div class="flex items-start space-x-2">
+                    <img src="./img/check.png" alt="" class="w-6 h-6">
+                    <p class="text-base">A fermentum in morbi pretium aliquam adipiscing <br> donec tempus.</p>
+                </div>
+                <div class="flex items-start space-x-2">
+                    <img src="./img/check.png" alt="" class="w-6 h-6">
+                    <p class="text-base">Vulputate placerat amet pulvinar lorem nisl.</p>
+                </div>
+                <div class="flex items-start space-x-2">
+                    <img src="./img/check.png" alt="" class="w-6 h-6">
+                    <p class="text-base">Consequat feugiat habitant gravida quisque elit <br> bibendum id adipiscing
+                        sed.</p>
+                </div>
+                <div class="flex items-start space-x-2">
+                    <img src="./img/check.png" alt="" class="w-6 h-6">
+                    <p class="text-base">Etiam duis lobortis in fames ultrices commodo nibh.</p>
+                </div>
+                <div class="flex items-start space-x-2">
+                    <img src="./img/check.png" alt="" class="w-6 h-6">
+                    <p class="text-base">Tincidunt sagittis neque sem ac eget.</p>
+                </div>
+                <div class="flex items-start space-x-2">
+                    <img src="./img/check.png" alt="" class="w-6 h-6">
+                    <p class="text-base">Ultricies amet justo et eget quisque purus <br> vulputate dapibus tortor.</p>
+                </div>
+                <p class="bg-[#FF3F3A] text-[white] w-36 text-center h-8 flex justify-center items-center rounded-md">
+                    More about us</p>
+            </div>
+        </div>
+        <main class="pt-16">
+            <div
+                class="flex justify-center gap-[680px] sm:flex-col sm:gap-8 sm:items-center md:flex-col md:gap-8 md:items-center">
+                <div>
+                    <p>READY TO LEARN?</p>
+                    <p style="font-size: 35px; font-weight: 700;">Featured Courses</p>
+                </div>
+                <div>
+                    <p class="border border-[#FF3F3A] w-36 h-8 flex items-center justify-center text-[#FF3F3A]">View all
+                        courses</p>
+                </div>
+            </div>
+            <div class="flex justify-center gap-10 pt-10 sm:flex-col sm:m-auto">
+                <div
+                    class="flex gap-8 bg-[#FFFFFF] w-[530px] rounded-lg shadow-md  sm:w-[93%] sm:m-auto md:w-[93%] md:m-auto">
+                    <div>
+                        <img src="./img/image.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-8 pt-10">
+                        <p class=" bg-[#03CEA4] rounded-md text-[white] w-[90px] flex justify-center">Marketing</p>
+                        <p style="font-weight: bold;">The Ultimate Google Ads Training <br> Course</p>
+                        <div class="flex items-center gap-2">
+                            <p style="color: red;">$100</p>
+                            <img src="./img/divider.png" alt="">
+                            <p style="color: gray;">by Jerome Bell</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex gap-8 bg-[#FFFFFF] w-[530px] rounded-lg shadow-md  sm:w-[93%] sm:m-auto md:w-[93%] md:m-auto">
+                    <div>
+                        <img src="./img/image1.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-8 pt-10">
+                        <p class=" bg-[#5A87FC] rounded-md text-[white] w-[110px] flex justify-center">Management</p>
+                        <p style="font-weight: bold;">Prduct Management Fundamentals</p>
+                        <div class="flex items-center gap-2">
+                            <p style="color: red;">$480</p>
+                            <img src="./img/divider.png" alt="">
+                            <p style="color: gray;">by Marvin McKinney</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center gap-10 pt-10 sm:flex-col sm:m-auto">
+                <div
+                    class="flex gap-8 bg-[#FFFFFF] w-[530px] rounded-lg shadow-md  sm:w-[93%] sm:m-auto md:w-[93%] md:m-auto">
+                    <div>
+                        <img src="./img/image2.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-8 pt-10">
+                        <p class=" bg-[#F89828] rounded-md text-[white] w-[130px] flex justify-center">HR & Recruting
+                        </p>
+                        <p style="font-weight: bold;">HR Management and Analytics</p>
+                        <div class="flex items-center gap-2">
+                            <p style="color: red;">$200</p>
+                            <img src="./img/divider.png" alt="">
+                            <p style="color: gray;">by Leslie Alexander Li</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex gap-8 bg-[#FFFFFF] w-[530px] rounded-lg shadow-md  sm:w-[93%] sm:m-auto md:w-[93%] md:m-auto">
+                    <div>
+                        <img src="./img/image3.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-8 pt-10">
+                        <p class=" bg-[#03CEA4] rounded-md text-[white] w-[110px] flex justify-center">Management</p>
+                        <p style="font-weight: bold;">Brand Management & PR Communications</p>
+                        <div class="flex items-center gap-2">
+                            <p style="color: red;">$530</p>
+                            <img src="./img/divider.png" alt="">
+                            <p style="color: gray;">by Marvin McKinney</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-10 pt-10 sm:flex-col sm:m-auto">
+                <div
+                    class="flex gap-8 bg-[#FFFFFF] w-[530px] rounded-lg shadow-md  sm:w-[93%] sm:m-auto md:w-[93%] md:m-auto">
+                    <div>
+                        <img src="./img/image4.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-8 pt-10">
+                        <p class=" bg-[#5A87FC] rounded-md text-[white] w-[110px] flex justify-center">Management</p>
+                        <p style="font-weight: bold;">Business Development <br> Management</p>
+                        <div class="flex items-center gap-2">
+                            <p style="color: red;">$400</p>
+                            <img src="./img/divider.png" alt="">
+                            <p style="color: gray;">by Dianne Russell</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex gap-8 bg-[#FFFFFF] w-[530px] rounded-lg shadow-md  sm:w-[93%] sm:m-auto md:w-[93%] md:m-auto">
+                    <div>
+                        <img src="./img/image6.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-8 pt-10">
+                        <p class=" bg-[#F52F6E] rounded-md text-[white] w-[80px] flex justify-center">Design</p>
+                        <p style="font-weight: bold;">Graphic Design Basic</p>
+                        <div class="flex items-center gap-2">
+                            <p style="color: red;">$500</p>
+                            <img src="./img/divider.png" alt="">
+                            <p style="color: gray;">by Guy Hawkins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex flex-col items-center pt-16">
+                    <p>OUR BENEFITS</p>
+                    <p style="font-size: 40px; font-weight: 600;">That’s how we do it</p>
+                </div>
+                <div
+                    class="flex justify-center items-center gap-28 pt-14 sm:flex-col sm:m-auto sm:gap-3 md:flex-col md:m-auto md:gap-3">
+                    <img src="./img/icon.png" alt="">
+                    <img src="./img/inner.png" alt="">
+                    <img src="./img/inner1.png" alt="">
+                    <img src="./img/inner2.png" alt="">
+                </div>
+                <div
+                    class="flex justify-center gap-12 pt-14 sm:flex-col sm:m-auto sm:p-4 sm:pt-1 md:flex-col md:m-auto md:p-4 md:pt-1">
+                    <div class="pt-32 sm:pt-5 md:pt-6">
+                        <p style="font-size: 35px; font-weight: 600;">Only practicing tutors</p>
+                        <p style="color: gray;">Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames <br>
+                            dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis <br>
+                            augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam <br>
+                            diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. <br>
+                            Amet enim, nisi tempus vehicula.</p>
+                    </div>
+                    <div>
+                        <img src="./img/illustration1 (1).png" alt="" style="width: 500px;">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#e3b9b6] flex flex-col gap-10 pb-20 sm:flex-col sm:gap-4 sm:m-auto sm:pb-10 md:pb-10">
+                <div class="flex flex-col items-center pt-16 ">
+                    <p>OUR EVENTS</p>
+                    <p style="font-size: 40px; font-weight: 600;" class="sm:pl-28 md:pl-32">Lectures & workshops</p>
+                </div>
+
+                <div
+                    class="flex justify-center items-center gap-14 bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                    <div class="flex items-center gap-3">
+                        <p style="font-size: 35px; color: red; font-weight: 500;">05</p>
+                        <div>
+                            <p style="font-weight: 500;">August </p>
+                            <p style="color: gray; font-size: 14px;">11:00 – 14:00</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-weight: 600;">Formation of the organizational structure of the company in the
+                            face of uncertainty.</p>
+                        <p style="color: gray; font-size: 14px;">Onine master-class</p>
+                    </div>
+                    <div>
+                        <p
+                            class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[#FF3F3A] rounded-md">
+                            View
+                            more</p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex justify-center items-center gap-40 bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                    <div class="flex items-center gap-3">
+                        <p style="font-size: 35px; color: red; font-weight: 500;">24</p>
+                        <div>
+                            <p style="font-weight: 500;">July </p>
+                            <p style="color: gray; font-size: 14px;">11:00 – 12:30</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-weight: 600;">Building a customer service department. Best Practices.</p>
+                        <p style="color: gray; font-size: 14px;">Onine lecture</p>
+                    </div>
+                    <div>
+                        <p
+                            class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[white] bg-[#FF3F3A] rounded-md">
+                            View
+                            more</p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex justify-center items-center gap-16 bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                    <div class="flex items-center gap-3">
+                        <p style="font-size: 35px; color: red; font-weight: 500;">16</p>
+                        <div>
+                            <p style="font-weight: 500;">July </p>
+                            <p style="color: gray; font-size: 14px;">10:00 – 13:00</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-weight: 600;">How to apply methods of speculative design in practice.
+                            Worldbuilding prototyping.</p>
+                        <p style="color: gray; font-size: 14px;">Onine workshop</p>
+                    </div>
+                    <div>
+                        <p
+                            class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[#FF3F3A] rounded-md">
+                            View
+                            more</p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-10 sm:flex-col sm:m-auto">
+                    <p style="font-size: 23px; font-weight: 600;">Do you want more?</p>
+                    <p
+                        class="border border-[#FF3F3A] w-40 h-8 flex items-center justify-center text-[white] bg-[#FF3F3A]">
+                        Explore all events</p>
+                </div>
+            </div>
+            <div class="flex justify-center gap-5 pt-20 sm:flex-col sm:items-center">
+                <div class="flex flex-col gap-5 sm:w-auto">
+                    <p style="font-weight: 500;">CREATEX CERTIFICATE</p>
+                    <p style="font-size: 40px; font-weight: 500;">Your expertise will <br> be confirmed</p>
+                    <p style="font-size: 15px; color: gray;">We are accredited by international professional <br>
+                        organizations and institutes:</p>
+                    <div class="flex items-center gap-5">
+                        <img src="./img/logo (5).png" alt="">
+                        <img src="./img/logo (6).png" alt="">
+                        <img src="./img/logo (7).png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/image1 (29).png" alt="" style="width: 700px;">
+                </div>
+            </div>
+            <div class="bg-[#F4F5F6] pt-14 pb-14 sm:m-auto">
+                <div class="pl-20">
+                    <p style="font-weight: 400;">BEST TUTORS ARE ALL HERE</p>
+                    <p style="font-size: 35px; font-weight: 600;">Meet our team</p>
+
+                </div>
+                <div class="flex justify-center gap-5 pt-8 sm:flex-col sm:items-center md:flex-col md:items-center">
+                    <img src="./img/hover1.png" alt="" style="width: 250px;">
+                    <img src="./img/idle.png" alt="" style="width: 250px;">
+                    <img src="./img/idle2.png" alt="" style="width: 250px;">
+                    <img src="./img/idle3.png" alt="" style="width: 250px;">
+                </div>
+            </div>
+            <div>
+                <div class="pl-28 pt-10">
+                    <p style="font-weight: 400;">OUR BLOG</p>
+                    <p style="font-size: 35px; font-weight: 600;">Meet our team</p>
+                </div>
+                <div class="flex gap-3 justify-center pb-20 sm:flex-col sm:items-center md:flex-col md:items-center">
+                    <div class="flex flex-col gap-3 items-start">
+                        <img src="./img/imageimg1.png" alt="" style="width: 330px;">
+                        <div class="text-[gray] flex items-center gap-2 pt-2">
+                            <p>Marketing</p>
+                            <img src="./img/divider1.png" alt="">
+                            <img src="./img/Calendar.png" alt="">
+                            <p>September 4, 2020</p>
+                            <img src="./img/divider1.png" alt="">
+                            <img src="./img/Clock.png" alt="">
+                            <p>36 min</p>
+                        </div>
+                        <p style="font-weight: 500; font-size: 16px;">What is traffic arbitrage and does it really
+                            <br> make money?
+                        </p>
+                        <p style="font-size: 14px; color: gray;">Pharetra, ullamcorper iaculis viverra parturient
+                            sed id <br> sed. Convallis proin dignissim lacus, purus gravida...</p>
+                        <img src="./img/listen.png" alt="">
+                    </div>
+
+                    <div class="flex flex-col gap-3 items-start">
+                        <img src="./img/imageimg2.png" alt="" style="width: 330px;">
+                        <div class="text-[gray] flex items-center gap-2 pt-2">
+                            <p>Management</p>
+                            <img src="./img/divider1.png" alt="">
+                            <img src="./img/Calendar.png" alt="">
+                            <p>August 25, 2020</p>
+                            <img src="./img/divider1.png" alt="">
+                            <img src="./img/Clock.png" alt="">
+                            <p>45 min</p>
+                        </div>
+                        <p style="font-weight: 500; font-size: 16px;">What to do and who to talk to if you want to <br>
+                            get feedback on the product</p>
+                        <p style="font-size: 14px; color: gray;">Neque a, senectus consectetur odio in aliquet nec eu.
+                            <br>
+                            Ultricies ac nibh urna urna sagittis faucibus...
+                        </p>
+                        <img src="./img/Watch.png" alt="">
+                    </div>
+
+                    <div class="flex flex-col gap-3 items-start">
+                        <img src="./img/imageimg3.png" alt="" style="width: 330px;">
+                        <div class="text-[gray] flex items-center gap-2 pt-2">
+                            <p>Design</p>
+                            <img src="./img/divider1.png" alt="">
+                            <img src="./img/Calendar.png" alt="">
+                            <p>August 8, 2020</p>
+
+                        </div>
+                        <p style="font-weight: 500; font-size: 16px;">Should you choose a creative profession if <br>
+                            you are attracted to creativity?</p>
+                        <p style="font-size: 14px; color: gray;">Curabitur nisl tincidunt eros venenatis vestibulum ac
+                            <br>
+                            placerat. Tortor, viverra sed vulputate ultrices...
+                        </p>
+                        <img src="./img/read.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#e3b9b6]">
+                <div class="pt-10 flex flex-col justify-center items-center text-center">
+                    <p style="font-weight: 400;">DON’T MISS ANYTHING</p>
+                    <p style="font-size: 35px; font-weight: 600;">Subscribe to the Createx School <br> announcements</p>
+                </div>
+                <div class="flex justify-center gap-5 pt-10 sm:flex-col sm:items-center md:flex-col md:items-center">
+                    <input type="text" placeholder="Your working email" class="w-64 h-10 rounded">
+                    <p
+                        class="border border-[#FF3F3A] w-32 h-10 flex items-center justify-center bg-[#FF3F3A] text-[white] rounded">
+                        Subscribe</p>
+                </div>
+                <div class="flex justify-between sm:hidden md:hidden">
+                    <img src="./img/illustration22 (1).png" alt="" style="width: 230px; height: 200px;">
+                    <img src="./img/illustration222 (1).png" alt="" style="width: 230px; height: 200px;">
+                </div>
+            </div>
+            <footer class="bg-[black]">
+                <div class="flex  pt-10 gap-10 justify-center sm:flex-col sm:pl-10 md:flex-col md:pl-10">
+                    <div class="text[white] bg-[black] flex flex-col gap-3 items-start">
+                        <img src="./img/logo (2).png" alt="">
+                        <p style="color: gray; font-size: 13px;">Createx Online School is a leader in online studying.
+                            <br>
+                            We have lots of courses and programs from the main <br>
+                            market experts. We provide relevant approaches <br>
+                            to online learning, internships and employment in the <br>
+                            largest companies in the country.
+                        </p>
+                        <div class="flex gap-3">
+                            <img src="./img/Facebook (2).png" alt="">
+                            <img src="./img/Twitter (1).png" alt="">
+                            <img src="./img/YouTube.png" alt="">
+                            <img src="./img/telegram.png" alt="">
+                            <img src="./img/Instagram (1).png" alt="">
+                            <img src="./img/Linked-In.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 18px; color: white;">SITE MAP</p>
+                        <p>About Us</p>
+                        <p>Courses</p>
+                        <p>Events</p>
+                        <p>Blog</p>
+                        <p>Contacts</p>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 18px; color: white;">COURSES</p>
+                        <p>Marketing</p>
+                        <p>Management</p>
+                        <p>HR & Recruting</p>
+                        <p>Design</p>
+                        <p>Development</p>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 20px; color: white;">CONTACT US</p>
+                        <div class="flex gap-1 items-center">
+                            <img src="./img/iPhone.png" alt="">
+                            <p> (405) 555-0128</p>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                            <img src="./img/Mail.png" alt="">
+                            <p>hello@createx.com</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 18px; color: white;">SIGN UP TO OUR NEWSLETTER</p>
+                        <input type="text" placeholder="Your working email" class="w-64 h-10 rounded bg-[#373636]">
+                        <p>Subscribe to our newsletter to receive communications <br> and early
+                            updates from Createx SEO Agency.</p>
+                    </div>
+                </div>
+                <div
+                    class="flex justify-evenly gap-96 mt-8 bg-[#1b1a1a] w-[1000px] m-auto items-center sm:flex-col sm:gap-5 sm:w-auto">
+                    <img src="./img/copyright.png" alt="">
+                    <p style="color: gray; font-size: 18px;">GO TO TOP</p>
+                </div>
+            </footer>
+        </main>
 </body>
+
 </html>
