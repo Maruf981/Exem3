@@ -566,6 +566,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -586,8 +590,16 @@ video {
   height: 2rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .h-\[100px\] {
   height: 100px;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-28 {
@@ -604,6 +616,10 @@ video {
 
 .w-40 {
   width: 10rem;
+}
+
+.w-52 {
+  width: 13rem;
 }
 
 .w-6 {
@@ -766,8 +782,32 @@ video {
   gap: 24rem;
 }
 
+.gap-\[113px\] {
+  gap: 113px;
+}
+
+.gap-\[150px\] {
+  gap: 150px;
+}
+
+.gap-\[190px\] {
+  gap: 190px;
+}
+
 .gap-\[680px\] {
   gap: 680px;
+}
+
+.gap-\[75px\] {
+  gap: 75px;
+}
+
+.gap-\[80px\] {
+  gap: 80px;
+}
+
+.gap-\[90px\] {
+  gap: 90px;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -881,19 +921,14 @@ video {
   padding: 2rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-10 {
@@ -962,10 +997,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pe-16 {
-  padding-inline-end: 4rem;
 }
 
 .text-center {
