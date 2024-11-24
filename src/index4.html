@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body>
+    <navbar class="flex justify-center gap-28 items-center h-20 text-[14px] sm:gap-2">
+        <div class="flex gap-10 sm;gap-2 md:gap-2">
+            <img src="./img/logo.png" alt="">
+            <select name="" id="pageSelector" class="" onchange="navigateToPage()">
+                <option value="" disabled selected>Choose a page</option>
+                <option value="index1.html">Page 1</option>
+                <option value="index3.html">Page 3</option>
+                <option value="index4.html">Page 4</option>
+                <option value="index5.html">Page 5</option>
+                <option value="index6.html">Page 6</option>
+                <option value="index7.html">Page 7</option>
+                <option value="index8.html">Page 8</option>
+                <option value="index9.html">Page 9</option>
+                <option value="index10.html">Page 10</option>
+                 
+            </select>
+
+            <script>
+                function navigateToPage() {
+                    const selector = document.getElementById('pageSelector');
+                    const selectedPage = selector.value;
+                    if (selectedPage) {
+                        window.location.href = selectedPage;
+                    }
+                }
+            </script>
+
+            <p class="sm:hidden md:hidden">Courses</p>
+            <p class="sm:hidden md:hidden">Events</p>
+            <p class="sm:hidden md:hidden">Blog</p>
+            <p class="sm:hidden md:hidden">Contacts</p>
+        </div>
+        <div class="flex gap-10">
+            <p class="bg-[#FF3F3A] text-[white] w-40 text-center sm:hidden md:hidden">Get consultation</p>
+            <img src="./img/account.png" alt="">
+        </div>
+    </navbar>
+</body>
+</html>
