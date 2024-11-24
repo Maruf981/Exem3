@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <title>Document</title>
 </head>
+
 <body>
     <navbar class="flex justify-center gap-28 items-center h-20 text-[14px] sm:gap-2">
         <div class="flex gap-10 sm;gap-2 md:gap-2">
@@ -13,15 +15,15 @@
             <select name="" id="pageSelector" class="" onchange="navigateToPage()">
                 <option value="" disabled selected>Choose a page</option>
                 <option value="index1.html">Page 1</option>
+                <option value="index2.html">Page 2</option>
                 <option value="index3.html">Page 3</option>
-                <option value="index4.html">Page 4</option>
                 <option value="index5.html">Page 5</option>
                 <option value="index6.html">Page 6</option>
                 <option value="index7.html">Page 7</option>
                 <option value="index8.html">Page 8</option>
                 <option value="index9.html">Page 9</option>
                 <option value="index10.html">Page 10</option>
-                 
+
             </select>
 
             <script>
@@ -44,5 +46,327 @@
             <img src="./img/account.png" alt="">
         </div>
     </navbar>
+    <main>
+
+        <div>
+            <div class="flex flex-col items-center pt-10 text-center">
+                <p style="font-weight: 500; font-size: 20px;">OUR EVENTS</p>
+                <p style="font-size: 35px; font-weight: 600"> Lectures, workshops & master-classes</p>
+            </div>
+
+            <div class="flex gap-8 justify-center pt-10 sm:flex-col sm:items-center md:flex-col md:items-center">
+                <div class="flex items-center gap-3 text-[gray]">
+                    <p>Event category</p>
+                    <div class="flex gap-4 border border-gray-150 w-32 h-9 items-center justify-center rounded">
+                        <p>all themes</p>
+                        <select name="" id=""></select>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-[gray]">
+                    <p>Sort by</p>
+                    <div class="flex gap-4 border border-gray-150 w-32 h-9 items-center justify-center rounded">
+                        <p>newest</p>
+                        <select name="" id=""></select>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-[gray]">
+                    <p>Show</p>
+                    <div class="flex gap-4">
+
+                        <input type="number" placeholder="9"
+                            class="flex gap-4 border border-gray-150 w-12 h-9 items-center justify-center rounded">
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 text-[gray]">
+                    <p>events per page</p>
+                    <div class="flex gap-4 border border-gray-150 w-52 h-9 items-center justify-center rounded">
+                        <p>Search event...</p>
+                        <img src="./img/search.png" alt="">
+                        <select name="" id=""></select>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/view.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-5">
+            <div
+                class="flex justify-center items-center pt-14 gap-14 bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                <div class="flex items-center gap-3">
+                    <p style="font-size: 35px; color: red; font-weight: 500;">05</p>
+                    <div>
+                        <p style="font-weight: 500;">August </p>
+                        <p style="color: gray; font-size: 14px;">11:00 – 14:00</p>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-weight: 600;">Formation of the organizational structure of the company in the
+                        face of uncertainty.</p>
+                    <p style="color: gray; font-size: 14px;">Onine master-class</p>
+                </div>
+                <div>
+                    <p
+                        class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[#FF3F3A] rounded-md">
+                        View
+                        more</p>
+                </div>
+            </div>
+
+            <div
+                class="flex justify-center items-center gap-40 bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                <div class="flex items-center gap-3">
+                    <p style="font-size: 35px; color: red; font-weight: 500;">24</p>
+                    <div>
+                        <p style="font-weight: 500;">July </p>
+                        <p style="color: gray; font-size: 14px;">11:00 – 12:30</p>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-weight: 600;">Building a customer service department. Best Practices.</p>
+                    <p style="color: gray; font-size: 14px;">Onine lecture</p>
+                </div>
+                <div>
+                    <p
+                        class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[white] bg-[#FF3F3A] rounded-md">
+                        View
+                        more</p>
+                </div>
+            </div>
+
+            <div
+                class="flex justify-center items-center gap-16 bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                <div class="flex items-center gap-3">
+                    <p style="font-size: 35px; color: red; font-weight: 500;">16</p>
+                    <div>
+                        <p style="font-weight: 500;">July </p>
+                        <p style="color: gray; font-size: 14px;">10:00 – 13:00</p>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-weight: 600;">How to apply methods of speculative design in practice.
+                        Worldbuilding prototyping.</p>
+                    <p style="color: gray; font-size: 14px;">Onine workshop</p>
+                </div>
+                <div>
+                    <p
+                        class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[#FF3F3A] rounded-md">
+                        View
+                        more</p>
+                </div>
+            </div>
+
+            <div
+                class="flex justify-center items-center pt-14 gap-[150px] bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                <div class="flex items-center gap-3">
+                    <p style="font-size: 35px; color: red; font-weight: 500;">10</p>
+                    <div>
+                        <p style="font-weight: 500;">July </p>
+                        <p style="color: gray; font-size: 14px;">9:00 – 14:00</p>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-weight: 600;">Find and evaluate: search and assessment tools for candidates.</p>
+                    <p style="color: gray; font-size: 14px;">Onine workshop</p>
+                </div>
+                <div>
+                    <p
+                        class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[#FF3F3A] rounded-md">
+                        View
+                        more</p>
+                </div>
+            </div>
+
+            <div
+                class="flex justify-center items-center gap-[80px] bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                <div class="flex items-center gap-3">
+                    <p style="font-size: 35px; color: red; font-weight: 500;">27</p>
+                    <div>
+                        <p style="font-weight: 500;">June </p>
+                        <p style="color: gray; font-size: 14px;">15:00 – 19:00</p>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-weight: 600;">Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.</p>
+                    <p style="color: gray; font-size: 14px;">Onine master-class</p>
+                </div>
+                <div>
+                    <p
+                        class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[#FF3F3A] rounded-md">
+                        View
+                        more</p>
+                </div>
+            </div>
+
+            <div
+                class="flex justify-center items-center gap-[113px] bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                <div class="flex items-center gap-3">
+                    <p style="font-size: 35px; color: red; font-weight: 500;">15</p>
+                    <div>
+                        <p style="font-weight: 500;">June</p>
+                        <p style="color: gray; font-size: 14px;">10:00 – 12:00</p>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-weight: 600;">Marketing or growth hacking: main differences and what business needs.</p>
+                    <p style="color: gray; font-size: 14px;">Onine lecture</p>
+                </div>
+                <div>
+                    <p
+                        class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[#FF3F3A] rounded-md">
+                        View
+                        more</p>
+                </div>
+            </div>
+
+
+
+
+
+            <div
+                class="flex justify-center items-center pt-14 gap-[90px] bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                <div class="flex items-center gap-3">
+                    <p style="font-size: 35px; color: red; font-weight: 500;">02</p>
+                    <div>
+                        <p style="font-weight: 500;">June </p>
+                        <p style="color: gray; font-size: 14px;">11:00 – 13:00</p>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-weight: 600;">How to brief a client and present your design to approve it from the first show.</p>
+                    <p style="color: gray; font-size: 14px;">Onine lecture</p>
+                </div>
+                <div>
+                    <p
+                        class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[#FF3F3A] rounded-md">
+                        View
+                        more</p>
+                </div>
+            </div>
+
+            <div
+                class="flex justify-center items-center gap-[190px] bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                <div class="flex items-center gap-3">
+                    <p style="font-size: 35px; color: red; font-weight: 500;">29</p>
+                    <div>
+                        <p style="font-weight: 500;">May</p>
+                        <p style="color: gray; font-size: 14px;">11:00 – 12:00</p>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-weight: 600;">Who is a project manager and do I want to be PM?</p>
+                    <p style="color: gray; font-size: 14px;">Onine master-class</p>
+                </div>
+                <div>
+                    <p
+                        class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[#FF3F3A] rounded-md">
+                        View
+                        more</p>
+                </div>
+            </div>
+
+            <div
+                class="flex justify-center items-center gap-[75px] bg-[white] w-[1100px] m-auto h-[100px] sm:flex-col sm:gap-4 sm:m-auto sm:w-auto sm:h-auto sm:p-10 md:flex-col md:gap-4 md:m-auto md:w-auto md:h-auto md:p-10">
+                <div class="flex items-center gap-3">
+                    <p style="font-size: 35px; color: red; font-weight: 500;">18</p>
+                    <div>
+                        <p style="font-weight: 500;">May</p>
+                        <p style="color: gray; font-size: 14px;">10:00 – 12:00</p>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-weight: 600;">The company's business page as an additional tool to support the announcement of <br> vacancies.</p>
+                    <p style="color: gray; font-size: 14px;">Onine lecture</p>
+                </div>
+                <div>
+                    <p
+                        class="border border-[#FF3F3A] w-32 h-8 flex items-center justify-center text-[#FF3F3A] rounded-md">
+                        View
+                        more</p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="./img/pagination (1).png" alt="">
+            </div>
+        </div>
+        <div class="bg-[#e3b9b6] mt-10 ">
+            <div class="pt-10 flex flex-col justify-center items-center text-center">
+                <p style="font-weight: 400;">DON’T MISS ANYTHING</p>
+                <p style="font-size: 35px; font-weight: 600;">Subscribe to the Createx School <br> announcements</p>
+            </div>
+            <div class="flex justify-center gap-5 pt-10 sm:flex-col sm:items-center md:flex-col md:items-center">
+                <input type="text" placeholder="Your working email" class="w-64 h-10 rounded">
+                <p
+                    class="border border-[#FF3F3A] w-32 h-10 flex items-center justify-center bg-[#FF3F3A] text-[white] rounded">
+                    Subscribe</p>
+            </div>
+            <div class="flex justify-between sm:hidden md:hidden">
+                <img src="./img/illustration22 (1).png" alt="" style="width: 230px; height: 200px;">
+                <img src="./img/illustration222 (1).png" alt="" style="width: 230px; height: 200px;">
+            </div>
+        </div>
+    </main>
+    <footer class="bg-[black]">
+                <div class="flex  pt-10 gap-10 justify-center sm:flex-col sm:pl-10 md:flex-col md:pl-10">
+                    <div class="text[white] bg-[black] flex flex-col gap-3 items-start">
+                        <img src="./img/logo (2).png" alt="">
+                        <p style="color: gray; font-size: 13px;">Createx Online School is a leader in online studying.
+                            <br>
+                            We have lots of courses and programs from the main <br>
+                            market experts. We provide relevant approaches <br>
+                            to online learning, internships and employment in the <br>
+                            largest companies in the country.
+                        </p>
+                        <div class="flex gap-3">
+                            <img src="./img/Facebook (2).png" alt="">
+                            <img src="./img/Twitter (1).png" alt="">
+                            <img src="./img/YouTube.png" alt="">
+                            <img src="./img/telegram.png" alt="">
+                            <img src="./img/Instagram (1).png" alt="">
+                            <img src="./img/Linked-In.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 18px; color: white;">SITE MAP</p>
+                        <p>About Us</p>
+                        <p>Courses</p>
+                        <p>Events</p>
+                        <p>Blog</p>
+                        <p>Contacts</p>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 18px; color: white;">COURSES</p>
+                        <p>Marketing</p>
+                        <p>Management</p>
+                        <p>HR & Recruting</p>
+                        <p>Design</p>
+                        <p>Development</p>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 20px; color: white;">CONTACT US</p>
+                        <div class="flex gap-1 items-center">
+                            <img src="./img/iPhone.png" alt="">
+                            <p> (405) 555-0128</p>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                            <img src="./img/Mail.png" alt="">
+                            <p>hello@createx.com</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 18px; color: white;">SIGN UP TO OUR NEWSLETTER</p>
+                        <input type="text" placeholder="Your working email" class="w-64 h-10 rounded bg-[#373636]">
+                        <p>Subscribe to our newsletter to receive communications <br> and early
+                            updates from Createx SEO Agency.</p>
+                    </div>
+                </div>
+                <div
+                    class="flex justify-evenly gap-96 mt-8 bg-[#1b1a1a] w-[1000px] m-auto items-center sm:flex-col sm:gap-5 sm:w-auto">
+                    <img src="./img/copyright.png" alt="">
+                    <p style="color: gray; font-size: 18px;">GO TO TOP</p>
+                </div>
+            </footer>
 </body>
+
 </html>
