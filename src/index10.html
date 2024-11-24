@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <navbar class="flex justify-center gap-28 items-center h-20 text-[14px] sm:gap-1">
+        <div class="flex gap-10 sm;gap-2 md:gap-2">
+            <img src="./img/logo.png" alt="">
+            <select name="" id="pageSelector" class="" onchange="navigateToPage()">
+                <option value="" disabled selected>Choose a page</option>
+                <option value="index1.html">Page 1</option>
+                <option value="index2.html">Page 2</option>
+                <option value="index3.html">Page 3</option>
+                <option value="index4.html">Page 4</option>
+                <option value="index5.html">Page 5</option>
+                <option value="index6.html">Page 6</option>
+                <option value="index7.html">Page 7</option>
+                <option value="index8.html">Page 8</option>
+                <option value="index9.html">Page 9</option>
+
+            </select>
+
+            <script>
+                function navigateToPage() {
+                    const selector = document.getElementById('pageSelector');
+                    const selectedPage = selector.value;
+                    if (selectedPage) {
+                        window.location.href = selectedPage;
+                    }
+                }
+            </script>
+
+            <p class="sm:hidden md:hidden">Courses</p>
+            <p class="sm:hidden md:hidden">Events</p>
+            <p class="sm:hidden md:hidden">Blog</p>
+            <p class="sm:hidden md:hidden">Contacts</p>
+        </div>
+        <div class="flex gap-10 items-center">
+            <p class="bg-[#FF3F3A] text-[white] w-40 text-center h-9 pt-2 sm:hidden md:hidden">Get consultation</p>
+            <img src="./img/account.png" alt="">
+        </div>
+    </navbar>
+    <header>
+        <div class="flex justify-center gap-10 pt-10 sm:flex-col">
+            <div class="flex flex-col items-center pl-20 gap-8 sm:pl-0 sm:p-6">
+                <div class="flex flex-col items-start text-center">
+                    <p style="font-weight: 500; font-size: 20px;">CONTACT INFO</p>
+                    <p style="font-size: 35px; font-weight: 600"> Get in touch</p>
+                </div>
+                <div class="flex flex-col gap-5 items-start">
+                    <img src="./img/email.png" alt="">
+                    <img src="./img/call.png" alt="">
+                    <img src="./img/address.png" alt="">
+                    <img src="./img/follow-us.png" alt="">
+                </div>
+            </div>
+            <div>
+                <img src="./img/map.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="flex justify-center gap-10 sm:flex-col sm:items-center pb-10">
+            <div>
+                <img src="./img/illustration (1)00.png" alt="" style="width: 350px;">
+            </div>
+            <div>
+                <div class="flex flex-col items-start text-center">
+                    <p style="font-weight: 500; font-size: 20px;">Any questions?</p>
+                    <p style="font-size: 35px; font-weight: 600"> Drop us a line</p>
+                </div> <br>
+                <div class="flex gap-6 sm:flex-col sm:items-center">
+                    <div>
+                        <label for="" style="color: gray;">First Name*</label> <br>
+                        <input type="email" placeholder="Your first name"
+                            class="w-64 h-10 border border-gray-150 rounded">
+                    </div>
+                    <div>
+                        <label for="" style="color: gray;">Last Name*</label> <br>
+                        <input type="email" placeholder="Your last name"
+                            class="w-64 h-10 border border-gray-150 rounded">
+                    </div>
+                </div> <br>
+                <div class="flex gap-6 sm:flex-col sm:items-center">
+                    <div>
+                        <label for="" style="color: gray;">Email*</label> <br>
+                        <input type="email" placeholder="Your working email"
+                            class="w-64 h-10 border border-gray-150 rounded">
+                    </div>
+                    <div>
+                        <label for="" style="color: gray;">Phone</label> <br>
+                        <input type="email" placeholder="Your phone number"
+                            class="w-64 h-10 border border-gray-150 rounded">
+                    </div>
+                </div> <br>
+                <div>
+                    <label for="" style="color: gray;">Message*</label> <br>
+                    <textarea placeholder="Your message"
+                        class="w-[530px] h-[120px] border border-gray-300 rounded-md p-2 sm:w-full"></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-[black]">
+        <div class="flex  pt-10 gap-10 justify-center sm:flex-col sm:pl-10 md:flex-col md:pl-10">
+            <div class="text[white] bg-[black] flex flex-col gap-3 items-start">
+                <img src="./img/logo (2).png" alt="">
+                <p style="color: gray; font-size: 13px;">Createx Online School is a leader in online studying.
+                    <br>
+                    We have lots of courses and programs from the main <br>
+                    market experts. We provide relevant approaches <br>
+                    to online learning, internships and employment in the <br>
+                    largest companies in the country.
+                </p>
+                <div class="flex gap-3">
+                    <img src="./img/Facebook (2).png" alt="">
+                    <img src="./img/Twitter (1).png" alt="">
+                    <img src="./img/YouTube.png" alt="">
+                    <img src="./img/telegram.png" alt="">
+                    <img src="./img/Instagram (1).png" alt="">
+                    <img src="./img/Linked-In.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                <p style="font-size: 18px; color: white;">SITE MAP</p>
+                <p>About Us</p>
+                <p>Courses</p>
+                <p>Events</p>
+                <p>Blog</p>
+                <p>Contacts</p>
+            </div>
+            <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                <p style="font-size: 18px; color: white;">COURSES</p>
+                <p>Marketing</p>
+                <p>Management</p>
+                <p>HR & Recruting</p>
+                <p>Design</p>
+                <p>Development</p>
+            </div>
+            <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                <p style="font-size: 20px; color: white;">CONTACT US</p>
+                <div class="flex gap-1 items-center">
+                    <img src="./img/iPhone.png" alt="">
+                    <p> (405) 555-0128</p>
+                </div>
+                <div class="flex gap-1 items-center">
+                    <img src="./img/Mail.png" alt="">
+                    <p>hello@createx.com</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                <p style="font-size: 18px; color: white;">SIGN UP TO OUR NEWSLETTER</p>
+                <input type="text" placeholder="Your working email" class="w-64 h-10 rounded bg-[#373636]">
+                <p>Subscribe to our newsletter to receive communications <br> and early
+                    updates from Createx SEO Agency.</p>
+            </div>
+        </div>
+        <div
+            class="flex justify-evenly gap-96 mt-8 bg-[#1b1a1a] w-[1000px] m-auto items-center sm:flex-col sm:gap-5 sm:w-auto">
+            <img src="./img/copyright.png" alt="">
+            <p style="color: gray; font-size: 18px;">GO TO TOP</p>
+        </div>
+    </footer>
+</body>
+
+</html>
