@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <navbar>
+        <div class="bg-[#e3b9b6] pb-20">
+            <div class="flex justify-center gap-28 items-center h-20 text-[14px] sm:gap-2">
+                <div class="flex gap-10 sm;gap-2 md:gap-2">
+                    <img src="./img/logo.png" alt="">
+                    <select name="" id="pageSelector" class="bg-[#e3b9b6]" onchange="navigateToPage()">
+                        <option value="" disabled selected>Choose a page</option>
+                        <option value="index1.html">Page 1</option>
+                        <option value="index2.html">Page 2</option>
+
+                        <option value="index3.html">Page 3</option>
+                        <option value="index4.html">Page 4</option>
+                        <option value="index5.html">Page 5</option>
+                        <option value="index7.html">Page 7</option>
+                        <option value="index8.html">Page 8</option>
+                        <option value="index9.html">Page 9</option>
+                        <option value="index10.html">Page 10</option>
+
+                    </select>
+
+                    <script>
+                        function navigateToPage() {
+                            const selector = document.getElementById('pageSelector');
+                            const selectedPage = selector.value;
+                            if (selectedPage) {
+                                window.location.href = selectedPage;
+                            }
+                        }
+                    </script>
+
+                    <p class="sm:hidden md:hidden">Courses</p>
+                    <p class="sm:hidden md:hidden">Events</p>
+                    <p class="sm:hidden md:hidden">Blog</p>
+                    <p class="sm:hidden md:hidden">Contacts</p>
+                </div>
+                <div class="flex gap-10">
+                    <p class="bg-[#FF3F3A] text-[white] w-40 text-center sm:hidden md:hidden">Get consultation</p>
+                    <img src="./img/account.png" alt="">
+                </div>
+
+            </div>
+            <div class="flex flex-col items-center pt-10">
+                <p style="font-weight: 500; font-size: 20px; color: red;">Online lecture
+                </p>
+                <p style="font-size: 35px; font-weight: 600; text-align: center;"> Formation of the organizational
+                    structure of the<br> company in the face of uncertainty</p>
+            </div>
+        </div>
+    </navbar>
+    <main>
+        <div class="flex justify-center pt-10">
+            <img src="./img/About.png" alt="" class="w-[90%] mx-auto">
+        </div>
+        <div class="flex justify-center pt-10">
+            <img src="./img/Speaker.png" alt="" class="w-[90%] mx-auto">
+        </div>
+        <div class="flex justify-center pt-10">
+            <img src="./img/For whom.png" alt="" class="w-[90%] mx-auto">
+        </div>
+        <div class="flex justify-center pt-10">
+            <img src="./img/Subscribe.png" alt="" class="w-[90%] mx-auto">
+        </div>
+        <div class="flex justify-center pt-10">
+            <img src="./img/Request.png" alt="" class="w-[90%] mx-auto">
+        </div>
+        <div class="flex justify-center pt-10">
+            <img src="./img/Related events (carousel).png" alt="" class="w-[90%] mx-auto">
+        </div>
+    </main>
+    <footer class="bg-[black]">
+                <div class="flex  pt-10 gap-10 justify-center sm:flex-col sm:pl-10 md:flex-col md:pl-10">
+                    <div class="text[white] bg-[black] flex flex-col gap-3 items-start">
+                        <img src="./img/logo (2).png" alt="">
+                        <p style="color: gray; font-size: 13px;">Createx Online School is a leader in online studying.
+                            <br>
+                            We have lots of courses and programs from the main <br>
+                            market experts. We provide relevant approaches <br>
+                            to online learning, internships and employment in the <br>
+                            largest companies in the country.
+                        </p>
+                        <div class="flex gap-3">
+                            <img src="./img/Facebook (2).png" alt="">
+                            <img src="./img/Twitter (1).png" alt="">
+                            <img src="./img/YouTube.png" alt="">
+                            <img src="./img/telegram.png" alt="">
+                            <img src="./img/Instagram (1).png" alt="">
+                            <img src="./img/Linked-In.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 18px; color: white;">SITE MAP</p>
+                        <p>About Us</p>
+                        <p>Courses</p>
+                        <p>Events</p>
+                        <p>Blog</p>
+                        <p>Contacts</p>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 18px; color: white;">COURSES</p>
+                        <p>Marketing</p>
+                        <p>Management</p>
+                        <p>HR & Recruting</p>
+                        <p>Design</p>
+                        <p>Development</p>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 20px; color: white;">CONTACT US</p>
+                        <div class="flex gap-1 items-center">
+                            <img src="./img/iPhone.png" alt="">
+                            <p> (405) 555-0128</p>
+                        </div>
+                        <div class="flex gap-1 items-center">
+                            <img src="./img/Mail.png" alt="">
+                            <p>hello@createx.com</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 text-[gray] text-[13px]">
+                        <p style="font-size: 18px; color: white;">SIGN UP TO OUR NEWSLETTER</p>
+                        <input type="text" placeholder="Your working email" class="w-64 h-10 rounded bg-[#373636]">
+                        <p>Subscribe to our newsletter to receive communications <br> and early
+                            updates from Createx SEO Agency.</p>
+                    </div>
+                </div>
+                <div
+                    class="flex justify-evenly gap-96 mt-8 bg-[#1b1a1a] w-[1000px] m-auto items-center sm:flex-col sm:gap-5 sm:w-auto">
+                    <img src="./img/copyright.png" alt="">
+                    <p style="color: gray; font-size: 18px;">GO TO TOP</p>
+                </div>
+            </footer>
+</body>
+
+</html>
