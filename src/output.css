@@ -607,6 +607,10 @@ video {
   width: 3rem;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
 .w-28 {
   width: 7rem;
 }
@@ -701,6 +705,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -819,6 +827,38 @@ video {
   gap: 90px;
 }
 
+.gap-80 {
+  gap: 20rem;
+}
+
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[200px\] {
+  gap: 200px;
+}
+
+.gap-\[400px\] {
+  gap: 400px;
+}
+
+.gap-\[400\] {
+  gap: 400;
+}
+
+.gap-\[400p\] {
+  gap: 400p;
+}
+
+.gap-\[500px\] {
+  gap: 500px;
+}
+
+.gap-\[600px\] {
+  gap: 600px;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -851,9 +891,19 @@ video {
   border-color: rgb(128 128 128 / var(--tw-border-opacity, 1));
 }
 
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity, 1));
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#03CEA4\] {
@@ -977,6 +1027,10 @@ video {
   padding-left: 7rem;
 }
 
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1043,12 +1097,22 @@ video {
   color: rgb(255 63 58 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#b43c3c\] {
+  --tw-text-opacity: 1;
+  color: rgb(180 60 60 / var(--tw-text-opacity, 1));
+}
+
 .text-\[gray\] {
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity, 1));
 }
 
 .text-\[white\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
@@ -1110,6 +1174,10 @@ video {
     justify-content: center;
   }
 
+  .sm\:gap-1 {
+    gap: 0.25rem;
+  }
+
   .sm\:gap-10 {
     gap: 2.5rem;
   }
@@ -1160,6 +1228,10 @@ video {
 
   .sm\:pl-28 {
     padding-left: 7rem;
+  }
+
+  .sm\:pl-5 {
+    padding-left: 1.25rem;
   }
 
   .sm\:pt-1 {
@@ -1266,6 +1338,10 @@ video {
 
   .md\:pl-32 {
     padding-left: 8rem;
+  }
+
+  .md\:pl-5 {
+    padding-left: 1.25rem;
   }
 
   .md\:pt-1 {
