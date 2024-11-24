@@ -1,48 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <title>Document</title>
 </head>
+
 <body>
-    <navbar class="flex justify-center gap-28 items-center h-20 text-[14px] sm:gap-2">
-        <div class="flex gap-10 sm;gap-2 md:gap-2">
-            <img src="./img/logo.png" alt="">
-            <select name="" id="pageSelector" class="" onchange="navigateToPage()">
-                <option value="" disabled selected>Choose a page</option>
-                <option value="index1.html">Page 1</option>
-                <option value="index2.html">Page 2</option>
-                 
-                <option value="index5.html">Page 4</option>
-                <option value="index6.html">Page 5</option>
-                <option value="index7.html">Page 6</option>
-                <option value="index8.html">Page 7</option>
-                <option value="index9.html">Page 8</option>
-                <option value="index10.html">Page 9</option>
-                 
-            </select>
+    <navbar>
+        <div class="bg-[#e3b9b6] pb-20">
+            <div class="flex justify-center gap-28 items-center h-20 text-[14px] sm:gap-2">
+                <div class="flex gap-10 sm;gap-2 md:gap-2">
+                    <img src="./img/logo.png" alt="">
+                    <select name="" id="pageSelector" class="" onchange="navigateToPage()">
+                        <option value="" disabled selected>Choose a page</option>
+                        <option value="index1.html">Page 1</option>
+                        <option value="index2.html">Page 2</option>
 
-            <script>
-                function navigateToPage() {
-                    const selector = document.getElementById('pageSelector');
-                    const selectedPage = selector.value;
-                    if (selectedPage) {
-                        window.location.href = selectedPage;
-                    }
-                }
-            </script>
+                        <option value="index5.html">Page 4</option>
+                        <option value="index6.html">Page 5</option>
+                        <option value="index7.html">Page 6</option>
+                        <option value="index8.html">Page 7</option>
+                        <option value="index9.html">Page 8</option>
+                        <option value="index10.html">Page 9</option>
 
-            <p class="sm:hidden md:hidden">Courses</p>
-            <p class="sm:hidden md:hidden">Events</p>
-            <p class="sm:hidden md:hidden">Blog</p>
-            <p class="sm:hidden md:hidden">Contacts</p>
-        </div>
-        <div class="flex gap-10">
-            <p class="bg-[#FF3F3A] text-[white] w-40 text-center sm:hidden md:hidden">Get consultation</p>
-            <img src="./img/account.png" alt="">
+                    </select>
+
+                    <script>
+                        function navigateToPage() {
+                            const selector = document.getElementById('pageSelector');
+                            const selectedPage = selector.value;
+                            if (selectedPage) {
+                                window.location.href = selectedPage;
+                            }
+                        }
+                    </script>
+
+                    <p class="sm:hidden md:hidden">Courses</p>
+                    <p class="sm:hidden md:hidden">Events</p>
+                    <p class="sm:hidden md:hidden">Blog</p>
+                    <p class="sm:hidden md:hidden">Contacts</p>
+                </div>
+                <div class="flex gap-10">
+                    <p class="bg-[#FF3F3A] text-[white] w-40 text-center sm:hidden md:hidden">Get consultation</p>
+                    <img src="./img/account.png" alt="">
+                </div>
+
+            </div>
+            <div class="flex flex-col items-center pt-10">
+                <p style="font-weight: 500; font-size: 20px; color: red;">COURSE</p>
+                <p style="font-size: 35px; font-weight: 600; text-align: center;"> User Experience. Principles of
+                    Human-Centered <br> Design</p>
+            </div>
         </div>
     </navbar>
+    <header class="flex justify-center mt-10 sm:flex-col sm:m-auto sm:p-5 md:flex-col md:m-auto md:p-5">
+        <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-1">
+                <p style="font-weight: 500; font-size: 25px;">ABOUT THE COURSE</p>
+                <p style=" color: gray; font-size: 14px;"> Bibendum vulputate adipiscing venenatis at est, a eu
+                    tincidunt. Leo aenean
+                    congue in <br>
+                    sagittis, felis maecenas amet varius at. Pellentesque euismod in faucibus at <br>
+                    elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat <br>
+                    senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna <br>
+                    aliquet ornare nibh vel lectus diam eget pretium. Lorem risus nunc tincidunt tortor, mi <br>
+                    nulla pellentesque</p>
+            </div>
+            <div class="flex flex-col gap-2 text-[15px]">
+                <p style="font-weight: 500; font-size: 20px; padding-bottom: 15px;">YOU WILL LEARN:</p>
+                <div class="flex flex-col gap-5 sm:w-[90%] sm:m-auto md:w-[90%] md:m-auto">
+
+                    <div class="flex items-start space-x-2 ">
+                        <img src="./img/check.png" alt="" class="w-6 h-6">
+                        <p class="text-base text-[13px]">A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                        </p>
+                    </div>
+                    <div class="flex items-start space-x-2 ">
+                        <img src="./img/check.png" alt="" class="w-6 h-6">
+                        <p class="text-base text-[13px]">Vulputate placerat amet pulvinar lorem nisl.</p>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <img src="./img/check.png" alt="" class="w-6 h-6">
+                        <p class="text-base text-[13px]">Consequat feugiat habitant gravida quisque elit bibendum id
+                            adipiscing sed.
+                        </p>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <img src="./img/check.png" alt="" class="w-6 h-6">
+                        <p class="text-base text-[13px]">Etiam duis lobortis in fames ultrices commodo nibh.</p>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <img src="./img/check.png" alt="" class="w-6 h-6">
+                        <p class="text-base text-[13px]">Fringilla in nec risus congue venenatis pretium posuere nec.
+                        </p>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                        <img src="./img/check.png" alt="" class="w-6 h-6">
+                        <p class="text-base text-[13px]">Cursus eu pretium, vulputate tempus quam massa sed at.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="./img/sidebar.png" alt="" style="width: 580px;">
+        </div>
+    </header>
+    <main>
+        <div class="flex justify-center gap-24 pt-14 sm:flex-col sm:m-auto md:flex-col md:m-auto">
+            <div>
+                <img src="./img/curator-image.png" alt="" style="width: 450px; ">
+            </div>
+            <div class="flex flex-col gap-6 items-start pt-8 sm:w-[90%] sm:m-auto md:w-[90%] md:m-auto">
+                <p>COURSE CURATOR</p>
+                <p style="font-size: 35px;">Cody Fisher</p>
+                <p style="color: gray; font-size: 13px;">Senior UX designer in IT Product Company</p>
+                <img src="./img/statistics.png" alt="">
+                <p style="color: gray; font-size: 13px;">Mattis adipiscing aliquam eu proin metus a iaculis faucibus.
+                    Tempus curabitur <br>
+                    venenatis, vulputate venenatis fermentum ante. Nisl, amet id semper semper quis <br>
+                    commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur <br>
+                    vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea <br>
+                    id habitasse proin. Nullam sit nec ipsum posuere non. Nam vel aliquam tristique <br>
+                    sollicitudin interdum quam. </p>
+                <img src="./img/socials.png" alt="">
+
+
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
